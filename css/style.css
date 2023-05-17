@@ -88,17 +88,17 @@ main {
   height: 24px;
   background-color: #4e505f;
   border-radius: 50%;
-  display: flex!important;
+  display: flex !important;
   justify-content: flex-end;
   align-items: end;
 }
 
 .light {
-  animation: nightTheme .3s linear forwards;
+  animation: nightTheme 0.3s linear forwards;
 }
 
 .night {
-  animation: lightTheme .3s linear forwards;
+  animation: lightTheme 0.3s linear forwards;
 }
 
 @keyframes lightTheme {
@@ -138,7 +138,7 @@ main {
   border-radius: 2.4rem;
   background-color: #2e2f38;
   color: #ffffff;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 400;
   cursor: pointer;
 }
@@ -150,6 +150,11 @@ main {
   text-align: end;
   background-color: #17171c;
   cursor: text;
+}
+
+#equal {
+  grid-row: 7;
+  grid-column: 3;
 }
 
 #input {
@@ -187,6 +192,7 @@ main {
   background-color: rgb(204, 47, 41);
 }
 
+
 #C:hover {
   background-color: rgb(167, 43, 39);
 }
@@ -202,11 +208,20 @@ main {
   background-color: transparent;
 }
 
-.calculator img {
-  width: 3.2rem;
-  height: 3.2rem;
+#delete i {
+  color: rgb(207, 200, 207)!important;
 }
 
+#delete i:hover {
+  color: rgb(204, 47, 41)!important;
+}
+
+.calculator img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* @responsive */
 
 @media screen and (max-width: 768px) {
   main {
