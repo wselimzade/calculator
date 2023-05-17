@@ -23,6 +23,7 @@ body {
   overflow-x: hidden;
   background-color: #17171c;
   font-family: "Work Sans", sans-serif;
+  transition: all .5s;
 }
 
 ul,
@@ -225,10 +226,6 @@ input {
   color: rgb(204, 47, 41) !important;
 }
 
-.calculator img {
-  width: 2.4rem;
-  height: 2.4rem;
-}
 
 /* @responsive */
 
