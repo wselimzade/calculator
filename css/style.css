@@ -91,14 +91,15 @@ main {
   display: flex !important;
   justify-content: flex-end;
   align-items: end;
+  transition: all .3s;
 }
 
 .light {
-  animation: nightTheme 0.3s linear forwards;
+  animation: lightTheme 0.3s linear forwards;
 }
 
 .night {
-  animation: lightTheme 0.3s linear forwards;
+  animation: nightTheme 0.3s linear forwards;
 }
 
 @keyframes lightTheme {
@@ -118,7 +119,6 @@ main {
     transform: translateX(-36px);
   }
 }
-
 /* @calculator  */
 
 .calculator {
@@ -148,7 +148,7 @@ main {
   justify-content: end;
   grid-column: 1/5;
   text-align: end;
-  background-color: #17171c;
+  background-color: transparent;
   cursor: text;
 }
 
@@ -192,7 +192,6 @@ main {
   background-color: rgb(204, 47, 41);
 }
 
-
 #C:hover {
   background-color: rgb(167, 43, 39);
 }
@@ -209,11 +208,11 @@ main {
 }
 
 #delete i {
-  color: rgb(207, 200, 207)!important;
+  color: rgb(207, 200, 207) !important;
 }
 
 #delete i:hover {
-  color: rgb(204, 47, 41)!important;
+  color: rgb(204, 47, 41) !important;
 }
 
 .calculator img {
