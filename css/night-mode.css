@@ -189,6 +189,7 @@ input {
 
 .blue {
   background-color: #505dda !important;
+  color: #FFFFFF!important;
 }
 
 .blue:hover {
@@ -210,6 +211,7 @@ input {
 
 #equal {
   background-color: rgb(228, 88, 37);
+  color: #ffffff;
 }
 #equal:hover {
   background-color: rgb(185, 72, 30);
