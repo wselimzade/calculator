@@ -66,7 +66,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 }
 
 #sun {
@@ -82,11 +82,41 @@ main {
 }
 
 .theme-content .ball {
+  content: "";
   position: absolute;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 24px;
+  height: 24px;
   background-color: #4e505f;
   border-radius: 50%;
+  display: flex!important;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.light {
+  animation: nightTheme .3s linear forwards;
+}
+
+.night {
+  animation: lightTheme .3s linear forwards;
+}
+
+@keyframes lightTheme {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(36px);
+  }
+}
+
+@keyframes nightTheme {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-36px);
+  }
 }
 
 /* @calculator  */
@@ -100,6 +130,9 @@ main {
 }
 
 .calculator div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1.2rem;
   border-radius: 2.4rem;
@@ -112,6 +145,7 @@ main {
 
 #input,
 #result {
+  justify-content: end;
   grid-column: 1/5;
   text-align: end;
   background-color: #17171c;
@@ -173,12 +207,6 @@ main {
   height: 3.2rem;
 }
 
-#negative,
-#delete {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media screen and (max-width: 768px) {
   main {
