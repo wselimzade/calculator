@@ -21,7 +21,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: #17171c;
+  background-color: #f1f2f3;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -63,7 +63,7 @@ section {
 
 input {
   border: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* @fonts */
@@ -85,7 +85,7 @@ input {
 
 .theme-content {
   position: relative;
-  background-color: #2e2f38;
+  background-color: #ffffff;
   padding: 0.4rem 0.8rem;
   border-radius: 1.6rem;
   cursor: pointer;
@@ -146,8 +146,8 @@ input {
   text-align: center;
   padding: 1.2rem;
   border-radius: 2.4rem;
-  background-color: #2e2f38;
-  color: #ffffff;
+  background-color: #FFFFFF;
+  color: #000000;
   font-size: 2.4rem;
   font-weight: 400;
   cursor: pointer;
@@ -180,10 +180,10 @@ input {
 }
 
 .grey {
-  background-color: #3e404e !important;
+  background-color: #D2D3DA !important;
 }
 .grey:hover {
-  background-color: #32333b !important;
+  background-color: #a8a9af !important;
 }
 
 .blue {
@@ -195,11 +195,12 @@ input {
 }
 
 .dark:hover {
-  background-color: #26262e;
+  background-color: #d8d8d8;
 }
 
 #C {
   background-color: rgb(204, 47, 41);
+  color: #f5fae6;
 }
 
 #C:hover {
@@ -218,11 +219,11 @@ input {
 }
 
 #delete i {
-  color: rgb(207, 200, 207) !important;
+  color: rgb(26, 23, 26) !important;
 }
 
 #delete i:hover {
-  color: rgb(204, 47, 41) !important;
+  color: rgb(73, 65, 64) !important;
 }
 
 .calculator img {

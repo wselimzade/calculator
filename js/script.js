@@ -2,15 +2,14 @@
 
 const ball = document.querySelector(".ball");
 const themeContent = document.querySelector(".theme-content");
-const toggleBall = () => {
-  ball.classList.toggle("light");
-  document.body.style.backgroundColor = "#F1F2F3";
-  themeContent.style.backgroundColor = "#ffffff";
+const link = document.querySelector("link[href='css/style.css']");
 
-  if (!ball.classList.contains("light")) {
-    document.body.style.backgroundColor = "#17171C";
-    themeContent.style.backgroundColor = "#2E2F38";
+const moveBall = () => {
+  ball.classList.toggle("light");
+  if (link.getAttribute("href") == "css/style.css") {
+    link.setAttribute("href", "css/night-mode.css");
+  } else {
+    link.setAttribute("href", "css/style.css");
   }
 };
-ball.addEventListener("click", toggleBall);
-
+ball.addEventListener("click", moveBall);
