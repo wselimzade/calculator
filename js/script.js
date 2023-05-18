@@ -43,25 +43,81 @@ const equal = document.querySelector("#equal")
 const input = document.querySelector("#input");
 const result = document.querySelector("#result");
 
-one.addEventListener("click", () => {input.value += "1"});
-two.addEventListener("click", () => {input.value += "2"});
-three.addEventListener("click", () => {input.value += "3"});
-four.addEventListener("click", () => {input.value += "4"});
-five.addEventListener("click", () => {input.value += "5"});
-six.addEventListener("click", () => {input.value += "6"});
-seven.addEventListener("click", () => {input.value += "7"});
-eight.addEventListener("click", () => {input.value += "8"});
-nine.addEventListener("click", () => {input.value += "9"});
-zero.addEventListener("click", () => {input.value += "0"});
+one.addEventListener("click", () => {result.value += 1});
+two.addEventListener("click", () => {result.value += 2});
+three.addEventListener("click", () => {result.value += 3});
+four.addEventListener("click", () => {result.value += 4});
+five.addEventListener("click", () => {result.value += 5});
+six.addEventListener("click", () => {result.value += 6});
+seven.addEventListener("click", () => {result.value += 7});
+eight.addEventListener("click", () => {result.value += 8});
+nine.addEventListener("click", () => {result.value += 9});
+zero.addEventListener("click", () => {result.value += 0});
 
-divide.addEventListener("click", () => {input.value += divide.textContent});
-multiply.addEventListener("click", () => {input.value += multiply.textContent});
-minus.addEventListener("click", () => {input.value += minus.textContent});
-plus.addEventListener("click", () => {input.value += plus.textContent});
-equal.addEventListener("click", () => {result.value = input.value});
+let operator;
+// input.value = null
+// result.value = null
+
+divide.addEventListener("click", () => {
+
+  input.value += result.value + divide.textContent;
+  result.value = null
+  operator = "/";
+});
+multiply.addEventListener("click", () => {
+  input.value += result.value +  multiply.textContent
+  result.value = null
+  operator = "*";
+});
+minus.addEventListener("click", () => {
+  input.value += result.value + minus.textContent;
+  result.value = null
+  operator = "-";
+});
+
+plus.addEventListener("click", () => {
+  input.value += result.value  + plus.textContent;
+  result.value = null
+  operator = "+"
+});
+remainder.addEventListener("click", ()=> {
+  input.value += result.value + remainder.textContent;
+  result.value = null
+  operator = "%"
+})
+
+equal.addEventListener("click", () => {
+  let inputVal = parseInt(input.value);
+  let resultVal = parseInt(result.value);
+ 
+  switch(operator) {
+    case "+": 
+        result.value = inputVal + resultVal;
+        input.value = result.value
+        break;
+    case "-": 
+        result.value = inputVal - resultVal;
+        break;
+    case "%": 
+        result.value = inputVal % resultVal;
+        break;
+    case "*": 
+        result.value = inputVal * resultVal;
+        break;
+    case "/":
+        result.value = inputVal / resultVal;
+        break;
+    default: 
+        result.value = "Invalid operator";
+  }
+});
 
 clear.addEventListener("click", ()=> {input.value = ""; result.value = ""})
+del.addEventListener("click", () => { result.value = result.value.slice(0,-1)})
+negative.addEventListener("click", () => {result.value = "-" + result.value})
 
-
+const calc = () => {
+  
+}
 
 
