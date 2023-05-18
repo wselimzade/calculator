@@ -28,7 +28,7 @@ const eight = document.querySelector("#eight");
 const nine = document.querySelector("#nine");
 const zero = document.querySelector("#zero");
 
-const dot = document.querySelector("#dot")
+const dot = document.querySelector("#dot");
 
 const clear = document.querySelector("#C");
 const del = document.querySelector("#delete");
@@ -159,7 +159,6 @@ remainder.addEventListener("click", () => {
 equal.addEventListener("click", () => {
   let inputVal = parseFloat(input.value);
   let resultVal = parseFloat(result.value);
-  let value = resultVal;
   let calculationResult;
 
   switch (operator) {
@@ -173,7 +172,7 @@ equal.addEventListener("click", () => {
       calculationResult = inputVal % resultVal;
       break;
     case "*":
-      calculationResult = (inputVal * resultVal);
+      calculationResult = inputVal * resultVal;
       break;
     case "/":
       calculationResult = inputVal / resultVal;
