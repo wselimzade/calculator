@@ -26,35 +26,35 @@
         </div>
       </section>
       <section class="calculator">
-        <input id="input" readonly></input>
-        <input id="result" readonly></input>
-        <div id="C"><i class="fa-solid fa-trash"></i></div>
-        <div id="negative" class="grey">
-          &#177
+        <input id="input" value="" readonly />
+        <input id="result" value="" readonly />
+        <div class="calculator-keys">
+          <button type="button" value="clear"  id="C" class="clear"><i class="fa-solid fa-trash"></i></button>
+          <button type="button" value="negative"  id="negative" class="negative grey">&PlusMinus;</button>
+          <button type="button" value="%"  id="remainder" class="operator grey">%</button>
+          <button type="button" value="/"  id="divide" class="operator blue">&divide;</button>
+          <button type="button" value="7"  id="seven" class="dark">7</button>
+          <button type="button" value="8"  id="eight" class="dark">8</button>
+          <button type="button" value="9"  id="nine" class="dark">9</button>
+          <button type="button" value="*"  id="multiply" class="operator blue">&times;</button>
+          <button type="button" value="4"  id="four" class="dark">4</button>
+          <button type="button" value="5"  id="five" class="dark">5</button>
+          <button type="button" value="6"  id="six" class="dark">6</button>
+          <button type="button" value="-"  id="minus" class="operator blue">-</button>
+          <button type="button" value="1"  id="one" class="dark">1</button>
+          <button type="button" value="2"  id="two" class="dark">2</button>
+          <button type="button" value="3"  id="three" class="dark">3</button>
+          <button type="button" value="+"  id="plus" class="operator blue">+</button>
+          <button type="button" value="."  id="dot" class="decimal dark">.</button>
+          <button type="button" value="0"  id="zero" class="dark">0</button>
+          <button type="button" value="delete"  id="delete" class="delete">
+            <i class="fa-solid fa-eraser"></i>
+          </button>
+          <button type="button" value="=" id="equal" class="operator equal">=</button>
         </div>
-        <div id="remainder" class="grey">%</div>
-        <div id="divide" class="blue">÷</div>
-        <div id="seven" class="dark">7</div>
-        <div id="eight" class="dark">8</div>
-        <div id="nine" class="dark">9</div>
-        <div id="multiply" class="blue">x</div>
-        <div id="four" class="dark">4</div>
-        <div id="five" class="dark">5</div>
-        <div id="six" class="dark">6</div>
-        <div id="minus" class="blue">-</div>
-        <div id="one" class="dark">1</div>
-        <div id="two" class="dark">2</div>
-        <div id="three" class="dark">3</div>
-        <div id="plus" class="blue">+</div>
-        <div id="dot" class="dark">.</div>
-        <div id="zero" class="dark">0</div>
-        <div id="delete">
-          <i class="fa-solid fa-eraser"></i>
-        </div>
-        <div id="equal">=</div>
       </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
