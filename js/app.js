@@ -35,6 +35,7 @@ keys.addEventListener("click", function (e) {
   const element = e.target;
   const evalue = element.value;
 
+  // if (!element.matches("button")) return;
   if (!element.matches("button")) return;
 
   switch (evalue) {
@@ -56,7 +57,7 @@ keys.addEventListener("click", function (e) {
       inputNumber(evalue);
       break;
     case "delete":
-      del();
+      delChar();
       break;
     case "negative":
       negative();
@@ -122,8 +123,9 @@ function clear() {
   input.value = null;
 }
 
-function del() {
-  result.value = result.value.slice(0, -1);
+function delChar() {
+  if (resultValue.length > 1) resultValue = resultValue.slice(0, -1);
+  else if (resultValue.length == 1) resultValue = 0;
 }
 
 function negative() {
@@ -131,4 +133,3 @@ function negative() {
     resultValue = parseFloat(resultValue) * -1;
   }
 }
-
